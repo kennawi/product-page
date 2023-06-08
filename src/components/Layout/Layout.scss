@@ -1,0 +1,13 @@
+.layout {
+  &__header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+  }
+  &__children {
+    top: 128px;
+    position: relative;
+    margin-bottom: 128px;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/typography";
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+
+  &__slash {
+    margin: 0px 5px;
+  }
+
+  &__item {
+    a {
+      text-decoration: underline;
+      color: $text-primary;
+      font-family: $font-family-primary;
+      font-size: $font-size-base;
+      font-weight: $font-weight-bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      color: $text-primary;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/layout";
+@import "../../styles/typography";
+
+.product-card {
+  max-width: 268px;
+  padding: 8px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.75px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+
+  flex-direction: column;
+  &__image {
+    border: solid 0.5px #ececec;
+    // height: 254px;
+    margin-bottom: 0.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+      color: $text-secondary;
+    }
+
+    img {
+      width: 56px;
+    }
+  }
+  &__rating {
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 0.5rem;
+    gap: 12px;
+
+    span {
+      font-size: $font-size-small;
+      font-weight: $font-weight-bold;
+      // margin-bottom: 0.5rem;
+    }
+  }
+
+  &__location {
+    text-align: center;
+    font-size: 10px;
+    font-weight: $font-weight-medium;
+    // margin-bottom: 0.5rem;
+    span {
+      font-size: 12px;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    // margin-bottom: 1rem;
+  }
+}

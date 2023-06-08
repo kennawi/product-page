@@ -1,0 +1,42 @@
+/* Container */
+@import "./typography";
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+
+  @include breakpoint-xl {
+    max-width: 1200px;
+  }
+  @include breakpoint-xxl {
+    max-width: 1480px;
+  }
+}
+
+//==========badge====//
+
+.badge {
+  position: absolute;
+  top: -4px;
+  left: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  padding: 2px;
+  background-color: #fff200;
+  border-radius: 50%;
+}
+
+.badge-number {
+  color: black;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-bold !important;
+  font-size: 8px;
+  font-weight: 100;
+}

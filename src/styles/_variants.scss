@@ -1,0 +1,20 @@
+.button {
+  padding: 18px 20px;
+  border: none;
+  width: 252px;
+  border-radius: 27px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-primary {
+  @extend .button;
+  background-color: $primary-color;
+  color: $text-white;
+}
+.button-secondary {
+  @extend .button;
+  background-color: $secondary-color;
+  color: $text-black;
+}
